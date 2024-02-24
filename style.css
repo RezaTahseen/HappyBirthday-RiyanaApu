@@ -1,0 +1,127 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+}
+body{
+    
+}
+.navbar{
+    margin: auto !important;
+    width: 50% !important;
+    height: 40px !important;
+    
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+}
+.navbar ul{
+    width: 80% !important;
+    height: 100% !important;
+    background-color: aqua;
+    list-style: none !important;
+    display: flex !important;
+    
+    align-items: center !important;
+  
+
+}
+.navbar ul li {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 33.33% !important;
+    height: 100% !important;
+    background-color: pink;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.navbar ul li a {
+    color: red;
+}
+.navbar ul li+li a{
+    color: rgb(15, 158, 2);
+}
+.navbar ul li+li+li a{
+    color: rgb(0, 0, 255);
+
+}
+.navbar ul li a:hover {
+    color: white;
+    transition: 0.5s;
+}
+.navbar ul li+li a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.navbar ul li+li+li a:hover{
+    color: white;
+    transition: 0.5s;
+
+}
+@media(max-width:500px){
+    .navbar{
+        margin: auto;
+        width: 80%;
+        height: 40px ;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .navbar ul{
+        width: 95% !important;
+        height: 100% !important;
+        background-color: aqua;
+        list-style: none !important;
+        display: flex !important;
+        
+        align-items: center !important;
+      
+    
+    }
+}
+.text {
+    color: #2c2c2c;
+  
+   letter-spacing: .05em;
+   text-shadow: 
+     4px 4px 0px #d5d5d5, 
+     7px 7px 0px rgba(0, 0, 0, 0.2);
+   font-size:2.3em;
+   font-family:  sans-serif;
+   -webkit-animation: shift 2s ;
+ animation: shift 2s ;
+   margin-top:125px;
+   text-align:center;
+   text-transform:uppercase;
+}
+h2 {
+   animation: appear 3.2s;
+   text-align:center;
+}
+
+@keyframes shift {
+   0% {opacity:0;}
+   33% {margin-top:0px;opacity:0;}
+   100% {margin-top:125px;opacity:1;text-shadow: 
+     4px 4px 0px #d5d5d5, 
+     7px 7px 0px rgba(0, 0, 0, 0.2);}
+}
+
+@keyframes appear {
+   0% {opacity:0;}
+   50% {opacity:0;}
+   100% {opacity:1;}
+}
+.oho1{
+    margin: auto !important;
+}
+.oho2{
+    margin: auto !important;
+    text-align: center;
+    margin-bottom: 20px !important;
+}
